@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  color: white;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background: linear-gradient(135deg, #1a253d, #172845);
+  border-radius: 15px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #405d98;
+}
+
+p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #405d98;
+  font-size: 1rem;
+  background: #1a253d;
+  color: white;
+}
+
+input::placeholder {
+  color: #607598;
+}
+
+button {
+  padding: 10px;
+  background: linear-gradient(45deg, #405d98, #687eab);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #687eab, #405d98);
+}
+
+.back-button {
+  width: 100%;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #405d98;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background: #0a1427;
+}
+
+.error-message {
+  color: #d8c3e7;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  display: none;
+}
+
+@keyframes float-footer {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+  background: #172845;
+  border-radius: 50%;
+  animation: float-footer 6s infinite ease-in-out;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  right: -20px;
+  width: 50px;
+  height: 50px;
+  background: #172845;
+  border-radius: 50%;
+  animation: float-footer 6s infinite ease-in-out reverse;
+}

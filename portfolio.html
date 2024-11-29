@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio showcasing my skills, achievements, and career journey."
+    />
+    <meta name="keywords" content="Portfolio, Career, Projects, Contact" />
+    <meta name="author" content="Chloé Pons" />
+    <meta property="og:title" content="Chloé Pons - Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore my portfolio showcasing competencies for RNCP38436 certification, academic journey, and technical skills."
+    />
+    <meta property="og:image" content="images/portfolio-preview.png" />
+    <meta property="og:url" content="https://chloeponsportfolio.com" />
+
+    <title>My Portfolio - Chloé Pons</title>
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <!-- header -->
+
+    <header class="header">
+      <div class="header-container">
+        <p class="emoji">✎ᝰ</p>
+        <p class="title">My portfolio</p>
+      </div>
+    </header>
+    <!--nav-->
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+    </nav>
+
+    <!-- About Me-->
+    <main>
+      <section id="about">
+        <h1>About Me</h1>
+        <div class="pulse"></div>
+        <div class="about">
+          <div class="about-top">
+            <div class="about-text">
+              <div class="first-line">
+                <p class="name">Hi, I'm Chloé Pons !</p>
+                <p class="birthdate">20/10/2005</p>
+                <p class="education">
+                  Currently studying at at<span class="highlight">
+                    Neoma Business School</span
+                  >, Paris
+                </p>
+                <p class="exchange">
+                  Exchange Program in programation at
+                  <span class="highlight">Epitech Barcelona</span>
+                </p>
+              </div>
+            </div>
+            <div class="about-image">
+              <img
+                src="images/image.png"
+                alt="Profile Picture"
+                class="profile-pic"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="about-bottom">
+            <p class="description">
+              I’m a 19-year-old student currently living in Barcelona. I’m
+              passionate about reading and keeping up with current geopolitical
+              events. I’m fluent in both French and English, and during my
+              schooling, I also learned Chinese. I am now expanding my language
+              skills by self-teaching Finnish and Spanish, constantly seeking to
+              broaden my cultural understanding and communication abilities.
+            </p>
+
+            <p class="description">
+              I began programming at Epitech Barcelona, where I’ve quickly
+              gained valuable skills in coding and problem-solving. This
+              portfolio highlights my journey in technology, marketing, and
+              design, showcasing the projects that reflect my growth.
+            </p>
+
+            <p class="description">
+              This portfolio represents my passion for creation and innovation.
+              Let's discover it together !
+            </p>
+
+            <p class="motto">My motto: Always strive for greatness!</p>
+
+            <div class="social-links">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="images/linkedin.png" alt="LinkedIn" loading="lazy" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/instagram.png"
+                  alt="Instagram"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="images/facebook.png" alt="Facebook" loading="lazy" />
+              </a>
+            </div>
+          </div>
+          <div class="animated-background"></div>
+        </div>
+      </section>
+
+      <!-- Projets-->
+
+      <section id="projects">
+        <h1>My Projects</h1>
+        <div class="pulse"></div>
+        <div id="projects-list"></div>
+
+        <div id="project-popup" class="popup">
+          <div id="popup-images" class="popup-images"></div>
+          <div id="popup-info" class="popup-info">
+            <h3 id="popup-project-name"></h3>
+            <p id="popup-tech-stack"></p>
+            <p id="popup-description"></p>
+            <p id="popup-group"></p>
+          </div>
+          <button id="popup-close">Back to portfolio</button>
+        </div>
+      </section>
+
+      <!-- Skills-->
+
+      <section id="skills">
+        <h1>My Skills</h1>
+        <div class="pulse"></div>
+        <p class="skills-intro">
+          Throughout my projects, I gained experience in multiple programming
+          languages. These experiences helped me develop comprehensive technical
+          skills and problem-solving abilities.
+        </p>
+
+        <div class="languages-section">
+          <div class="languages">
+            <div class="language">
+              <img src="images/html.png" alt="HTML" loading="lazy" />
+              <p>HTML</p>
+            </div>
+            <div class="language">
+              <img src="images/css.webp" alt="CSS" loading="lazy" />
+              <p>CSS</p>
+            </div>
+            <div class="language">
+              <img src="images/php.svg" alt="PHP" loading="lazy" />
+              <p>PHP</p>
+            </div>
+            <div class="language">
+              <img src="images/python.jpeg" alt="Python" loading="lazy" />
+              <p>Python</p>
+            </div>
+            <div class="language">
+              <img src="images/js.png" alt="JavaScript" loading="lazy" />
+              <p>JavaScript</p>
+            </div>
+            <div class="language">
+              <img src="images/sql.jpeg" alt="SQL" loading="lazy" />
+              <p>SQL</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-container">
+          <div class="skill-box">
+            <h3>Web Development</h3>
+            <p>
+              HTML, CSS, JavaScript and PHP expertise for creating responsive
+              and dynamic websites.
+            </p>
+          </div>
+          <div class="skill-box">
+            <h3>Database Management</h3>
+            <p>
+              Proficient in SQL, database optimization, and secure data
+              handling.
+            </p>
+          </div>
+          <div class="skill-box">
+            <h3>Manager de Projets Informatiques</h3>
+            <p>
+              RNCP Level 7 Qualification obtained through advanced training in
+              IT project management.
+            </p>
+            <a
+              href="https://www.francecompetences.fr/recherche/rncp/38436/"
+              target="_blank"
+              class="qualification-link"
+            >
+              Learn more
+            </a>
+          </div>
+        </div>
+        <div class="pedagogy-button-container">
+          <a href="access.html" class="pedagogy-btn">Pedagogic Team</a>
+        </div>
+      </section>
+
+      <!-- Resume-->
+
+      <section id="resume">
+        <h1>My Resume</h1>
+        <div class="pulse"></div>
+        <div class="resume-container">
+          <div class="resume-block">
+            <h3>Formations</h3>
+            <ul>
+              <li>
+                <strong>TEMA:</strong> Neoma BS, Paris (since 2023)<br />
+                <span
+                  >Marketing, Innovation, Graphic Design, and Project
+                  Management.</span
+                >
+              </li>
+              <li>
+                <strong>Web Development:</strong> Epitech, Barcelona (2024 -
+                2025)<br />
+                <span>Web programming in English.</span>
+              </li>
+              <li>
+                <strong>Baccalauréat Général:</strong> Lycée Victor Duruy, Paris
+                (2020 - 2023)<br />
+                <span>Geopolitics, Mathematics, Economics.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="resume-block">
+            <h3>Experience</h3>
+            <ul>
+              <li>
+                <strong>Digital Marketing Intern:</strong> Balenciaga, Paris
+                (June - August 2024)<br />
+                <span
+                  >Tasks: Data analysis, marketing strategies, and social media
+                  tools.</span
+                >
+              </li>
+              <li>
+                <strong>Personal Tutor:</strong> Lycée Victor Duruy, Paris (2021
+                - 2023)<br />
+                <span
+                  >Provided academic support in Mathematics, Geopolitics, and
+                  English.</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="resume-block">
+            <h3>Skills</h3>
+            <ul>
+              <li>
+                <strong>Technical:</strong> Adobe Suite, PowerPoint, Excel, PHP,
+                HTML, CSS, SQL, Python.
+              </li>
+              <li>
+                <strong>Interpersonal:</strong> Teamwork, adaptability, active
+                listening, motivation.
+              </li>
+              <li>
+                <strong>Languages:</strong>
+                <ul>
+                  <li>French: Native</li>
+                  <li>English: C1 level</li>
+                  <li>Spanish & Finnish: Self-taught</li>
+                  <li>Chinese: Studied during school</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="paragraph">
+          Download my CV to see more about my skills and experience:
+        </p>
+        <a href="images/CV.pdf" class="download-btn" target="_blank"
+          >Download CV</a
+        >
+      </section>
+
+      <footer class="footer">
+        <h1>Contact Me</h1>
+        <div class="pulse"></div>
+        <div class="footer-container">
+          <div class="footer-title">Chloé Pons</div>
+          <p class="footer-text"></p>
+          <p class="footer-email">
+            Email:
+            <a href="mailto:chloe.ukkola.pons@gmail.com"
+              >chloe.ukkola.pons@gmail.com</a
+            >
+            Hello, I am a marketing student at NEOMA Business School in Paris,
+            currently studying programming at Epitech in Barcelona. This
+            experience has been incredibly enriching, both personally and
+            professionally. I’ve gained valuable new skills and explored
+            different coding languages. Don’t hesitate to reach out with any
+            questions or requests !
+          </p>
+          <h3 class="footer-contact">LET'S GET IN CONTACT !</h3>
+
+          <form
+            action="https://formspree.io/f/myzypvaj"
+            method="POST"
+            class="footer-form"
+          >
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+          <p class="footer-credits">© 2024 Chloé Pons. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+          const sections = document.querySelectorAll("section");
+          const navLinks = document.querySelectorAll("nav ul li a");
+          const projectsList = document.getElementById("projects-list");
+
+          const popUpName = document.getElementById("popup-project-name");
+          const popUpDescription = document.getElementById("popup-description");
+          const popUpStack = document.getElementById("popup-tech-stack");
+
+          const scrollWithOffset = (target) => {
+            const offset = 110;
+            const targetPosition = target.offsetTop;
+            window.scrollTo({
+              top: targetPosition - offset,
+              behavior: "smooth",
+            });
+          };
+
+          navLinks.forEach((anchor) => {
+            anchor.addEventListener("click", (e) => {
+              e.preventDefault();
+              const targetId = anchor.getAttribute("href").substring(1);
+              const targetElement = document.getElementById(targetId);
+              scrollWithOffset(targetElement);
+            });
+          });
+
+          const setActiveLink = () => {
+            let currentSection = "";
+
+            sections.forEach((section) => {
+              const sectionTop = section.offsetTop;
+              const sectionHeight = section.offsetHeight;
+
+              if (window.scrollY >= sectionTop - sectionHeight / 3) {
+                currentSection = section.getAttribute("id");
+              }
+            });
+
+            navLinks.forEach((link) => {
+              link.classList.remove("active");
+              if (link.getAttribute("href").includes(currentSection)) {
+                link.classList.add("active");
+              }
+            });
+          };
+
+          const fetchData = async () => {
+            const response = await fetch("portfolio.json");
+            const data = await response.json();
+            return data.Projects;
+          };
+
+          const projects = await fetchData();
+
+          projects.forEach((project) => {
+            const projectDiv = document.createElement("div");
+            projectDiv.classList.add("project");
+
+            projectDiv.innerHTML = `
+            <div class="project-box" id=project${project.id}>
+            <img class="project-image" src="${project.image}" alt="${
+              project.name
+            }" />
+            <div class="project-info">
+            <h3>${project.name}</h3>
+            <p>${project.stack.join(", ")}</p>
+            <p>${project.group}</p>
+          </div>
+        </div>
+      `;
+
+            const image = projectDiv.querySelector(".project-image");
+            const open = () => {
+              openImagePopup(project);
+            };
+            image.addEventListener("click", open);
+
+            projectsList.appendChild(projectDiv);
+          });
+
+          function openImagePopup(project) {
+            popUpName.innerText = project.name;
+            popUpDescription.innerText = project.description;
+            popUpStack.innerText = project.stack.join(", ");
+
+            const popupImagesContainer =
+              document.getElementById("popup-images");
+            popupImagesContainer.innerHTML = `
+      <img src="${project["image-popup"]}" alt="${project.name} popup image" />
+    `;
+
+            const popupInfoContainer = document.getElementById("popup-info");
+            popupInfoContainer.innerHTML = `
+      <h3>${project.name}</h3>
+      <p><strong>Languages:</strong> ${project.stack.join(", ")}</p>
+      <p>${project.description}</p>
+      <p>${project.group}</p>
+    `;
+
+            document.getElementById("project-popup").style.display = "flex";
+          }
+
+          document
+            .getElementById("popup-close")
+            .addEventListener("click", () => {
+              document.getElementById("project-popup").style.display = "none";
+            });
+
+          window.addEventListener("scroll", setActiveLink);
+        });
+
+        window.addEventListener("load", function () {
+          window.scrollTo(0, 0);
+
+          document.body.style.overflow = "hidden";
+          setTimeout(() => {
+            document.body.style.overflow = "auto";
+          }, 1000);
+        });
+      </script>
+    </main>
+  </body>
+</html>

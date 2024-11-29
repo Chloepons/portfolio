@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  align-items: center;
+  font-size: 60px;
+}
+
+p {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.top-banner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blob-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.blob {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  filter: blur(20px);
+  animation: move-blobs 8s infinite ease-in-out;
+}
+
+.blob:nth-child(1) {
+  top: 10%;
+  left: 10%;
+  background: radial-gradient(
+    circle,
+    rgba(36, 172, 230, 0.8),
+    rgba(186, 27, 112, 0.8)
+  );
+  animation-duration: 12s;
+}
+
+.blob:nth-child(2) {
+  top: 50%;
+  left: 60%;
+  animation-duration: 10s;
+  background: radial-gradient(
+    circle,
+    rgba(171, 76, 244, 0.8),
+    rgba(2, 14, 246, 0.8)
+  );
+}
+
+.blob:nth-child(3) {
+  top: 30%;
+  left: 80%;
+  animation-duration: 15s;
+  background: radial-gradient(
+    circle,
+    rgba(38, 0, 255, 0.8),
+    rgba(255, 0, 0, 0.8)
+  );
+}
+
+.blob:nth-child(4) {
+  top: 70%;
+  left: 40%;
+  animation-duration: 9s;
+  background: radial-gradient(
+    circle,
+    rgba(123, 0, 255, 0.8),
+    rgba(0, 255, 238, 0.8)
+  );
+}
+
+.blob:nth-child(5) {
+  top: 20%;
+  left: 10%;
+  animation-duration: 14s;
+  animation-delay: 3s;
+  background: radial-gradient(
+    circle,
+    rgba(150, 0, 255, 0.8),
+    rgba(0, 255, 150, 0.8)
+  );
+}
+
+@keyframes move-blobs {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  15% {
+    transform: translate(-50px, 70px) scale(1.2);
+  }
+  40% {
+    transform: translate(100px, -50px) scale(0.9);
+  }
+  65% {
+    transform: translate(-70px, -70px) scale(1.1);
+  }
+  90% {
+    transform: translate(0, 0) scale(1);
+  }
+}

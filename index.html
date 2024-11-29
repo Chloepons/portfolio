@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio showcasing my skills, achievements, and career journey."
+    />
+    <meta
+      name="description"
+      content="Explore the portfolio of Chloé Pons, showcasing her skills, achievements, web development projects, and career journey in marketing and communication."
+    />
+    <meta
+      name="keywords"
+      content="Chloé Pons, Portfolio, Marketing, Web Development, Skills, Projects, RNCP Certification, Communication, Career Journey"
+    />
+    <meta name="author" content="Chloé Pons" />
+
+    <meta property="og:title" content="Chloé Pons - Portfolio" />
+    <meta
+      property="og:description"
+      content="Discover the professional portfolio of Chloé Pons, featuring her expertise in marketing, communication, and web development."
+    />
+    <meta
+      property="og:image"
+      content="https://yourwebsite.com/images/portfolio-thumbnail.png"
+    />
+    <meta property="og:url" content="https://yourwebsite.com/" />
+    <meta property="og:type" content="website" />
+    <title>My Portfolio - Chloé Pons</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="top-banner" id="top-banner">
+      <h1>Welcome to my portfolio!</h1>
+      <p>Scroll down to learn more about me</p>
+      <p>⬇</p>
+      <div class="blob-container">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <script>
+      let scrollHandled = false;
+
+      window.addEventListener("scroll", function () {
+        const scrollPosition = window.scrollY;
+        const scrollThreshold = 100;
+
+        if (scrollPosition > scrollThreshold && !scrollHandled) {
+          scrollHandled = true;
+
+          window.location.href = "portfolio.html";
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "Projects": [
+    {
+      "id": 1,
+      "name": "MyShop",
+      "description": "A short group project were we had to code the backend and frontend of a wesbsite. We designed it to fit our criteria but the website was not interective, the search bar did not work as well as any of the other functionnalities. It was our first project, so we focused on the visuals and how to fit the requierements of a website !",
+      "stack": ["HTML", "CSS", "JS"],
+      "image": "images/myshop.png",
+      "image-popup": "images/myshop-popup.png",
+      "group": "Chloé Pons, Zoé Charrier, Paul Hermel"
+    },
+
+    {
+      "id": 2,
+      "name": "MyShop 2",
+      "description": "A group project in which we had to code the backend and front end of a website ! We created a login section in which users could log in, register, reset their passwords as needed. We also created an admin section in which the admin users could add, edit or delete products, users or categories. Finally we created a shop with working filter by category and price, a search bar, a footer and an interaction product cell.",
+      "stack": ["PHP", "MySQL", "HTML", "CSS", "JS"],
+      "image": "images/myshop2.png",
+      "image-popup": "images/myshop2-popup.png",
+      "group": "Chloé Pons, Zoé Charrier, Paul Hermel"
+    }
+  ]
+}
